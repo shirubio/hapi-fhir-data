@@ -31,6 +31,6 @@ https://github.com/synthetichealth/synthea/releases/download/master-branch-lates
     
    This can be very slow if you asked for a large number of patients.
       
-   After loading the data, you can delete all subfolders in the 'data' folder. 
+   After loading the data, you can delete all folders in the 'data' folder. 
 
 4. Hapi coding!
