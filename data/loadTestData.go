@@ -29,7 +29,7 @@ func loadTestData(urlIndex int, directoryPath string) {
 		log.Fatal("Error reading payload directory:", err)
 	}
 
-	sem := make(chan struct{}, 5)
+	sem := make(chan struct{}, 10)
 
 	count := 0
 	for _, fileInfo := range fileInfos {
