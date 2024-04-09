@@ -8,7 +8,7 @@ Pre-requisites:
 - Docker Compose
 - Git
 - Java 11+
-- Maven 3.6+
+- Maven 3.0+
 - Go 1.18+
 
 Optional. Clone Hapi FHIR JPA Server Starter project:
@@ -16,7 +16,7 @@ Optional. Clone Hapi FHIR JPA Server Starter project:
 
 
 
-1. Run your local HAPI FHIR server on port 8080.  
+1. Run your local HAPI FHIR server on port 8088.  
 
 2. Generate test data.
 

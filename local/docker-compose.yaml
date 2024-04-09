@@ -6,7 +6,7 @@ services:
     restart: always
     image: postgres:15.4
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - postgres:/var/lib/postgresql/data
 #      - ./init-scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
     env_file:
       - fhir.env
@@ -25,13 +25,13 @@ services:
     env_file:
       - fhir.env
     ports:
-      - "8080:8080"
+      - "8088:8080"
     configs:
       - source: hapi-postgres
         target: /app/config/application.yaml
 
 volumes:
-    postgres-data:
+    postgres:
       external: true
 
 configs:

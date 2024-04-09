@@ -18,9 +18,7 @@ func main() {
 
 // You can populate multiple service URLs here
 var serviceURLs = []string{
-	"http://localhost:8080/fhir",
-	//"http://localhost:8081/fhir",
-	//"http://localhost:8082/fhir",
+	"http://localhost:8088/fhir",
 }
 
 func loadTestData(urlIndex int, directoryPath string) {
