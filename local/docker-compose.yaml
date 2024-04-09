@@ -16,7 +16,7 @@ services:
   hapi-fhir:
     depends_on:
       - postgres-fhir
-    image: hapiproject/hapi:v6.8.0
+    image: hapiproject/hapi:v6.8.3
 #    image: hapi-fhir/hapi-fhir-jpaserver-starter:latest
     container_name: hapi-fhir-main
     restart: on-failure
