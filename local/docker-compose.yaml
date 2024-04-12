@@ -22,6 +22,7 @@ services:
     restart: on-failure
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-fhir:5432/fhir
+      - _JAVA_OPTIONS=-Xmx4g -Xms4g
     env_file:
       - fhir.env
     ports:
