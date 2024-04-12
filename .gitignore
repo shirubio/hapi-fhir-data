@@ -12,6 +12,11 @@
 
 synthea*.jar
 
+/data/fhir-main/*
+/data/fhir-hfd/*
+/data/fhir-arch/*
+/data/output/*
+
 # Test binary, built with `go test -c`
 *.test
 
