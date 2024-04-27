@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	fmt.Println("************************* Version - 2024-04-05")
+	fmt.Println("************************* Version - 2024-04-24")
 	loadTestData(0, "./output/dependencies/")
 	loadTestData(0, "./output/fhir")
 }

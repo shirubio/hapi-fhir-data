@@ -7,7 +7,6 @@ services:
     image: postgres:15.4
     volumes:
       - postgres:/var/lib/postgresql/data
-#      - ./init-scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
     env_file:
       - fhir.env
     ports:
@@ -17,7 +16,6 @@ services:
     depends_on:
       - postgres-fhir
     image: hapiproject/hapi:v6.8.3
-#    image: hapi-fhir/hapi-fhir-jpaserver-starter:latest
     container_name: hapi-fhir-main
     restart: on-failure
     environment:

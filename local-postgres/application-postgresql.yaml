@@ -14,7 +14,6 @@ spring:
     check-location: false
     baselineOnMigrate: true
   datasource:
-#    url: 'jdbc:postgresql://postgres-fhir:5432/fhir'
     url: $${SPRING_DATASOURCE_URL}
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
