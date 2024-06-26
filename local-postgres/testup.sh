@@ -1,10 +1,6 @@
 #!/bin/sh
-URL="http://localhost:8088/fhir/Patient/"
 
-status_code=$(curl -o /dev/null -s -w "%{http_code}" "$URL")
+# Just a simple visual indicator that the servers are up and running
 
-if [[ "$status_code" -ge 200 && "$status_code" -lt 300 ]]; then
-    echo "Server is UP"
-else
-    echo "Server is not ready yet, wait a few more seconds"
-fi
+curl http://localhost:8080/fhir/Patient?_summary=true
+curl http://localhost:8080/fhir/Observation?_summary=true
